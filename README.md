@@ -10,12 +10,6 @@ A Moodle admin tool plugin that integrates with the UptimeRobot monitoring servi
 - **Flexible Monitoring Methods**: Support for both heartbeat (push) and polling (pull) monitoring approaches
 - **Customizable Notifications**: Configure email, in-app, or SMS alerts through UptimeRobot
 
-## Author
-
-This plugin was created by **Frederick Harju**, a Moodle software and server architect. I am not employed by UptimeRobot but I do include an affiliate link to them below. If you decide to sign up for a paid plan, using my affiliate link helps support the continued development of this plugin at no extra cost to you - thank you!
-
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/fredharju/).
-
 ## Requirements
 
 - Moodle 4.5 or higher
@@ -95,3 +89,9 @@ Notifications are managed through your UptimeRobot dashboard:
 - SMS alerts (paid plans)
 - Webhook integrations
 - Mobile app push notifications
+
+## Author
+
+This plugin was created by **Frederick Harju**, a Moodle software and server architect. I am not employed by UptimeRobot but I do include an affiliate link to them below. If you decide to sign up for a paid plan, using my affiliate link helps support the continued development of this plugin at no extra cost to you - thank you!
+
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/fredharju/).
