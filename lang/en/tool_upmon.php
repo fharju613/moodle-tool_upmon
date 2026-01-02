@@ -55,5 +55,6 @@ $string['currentmonitor'] = 'Currently Linked Monitor ID';
 $string['typechangeinfo'] = 'You cannot change the type of an existing monitor. Please create a new monitor instead.';
 $string['monitorcreationfailed'] = 'Failed to create monitor';
 $string['invalidtoken'] = 'Security token must contain only letters and numbers (alphanumeric).';
+$string['invalidtype'] = 'Invalid monitor type. Must be KEYWORD or HEARTBEAT.';
 $string['friendlynametoolong'] = 'Friendly name must be 250 characters or less.';
 $string['friendlynamerequired'] = 'Friendly name is required.';
