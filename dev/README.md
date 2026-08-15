@@ -50,6 +50,7 @@ Useful extras:
 dev/testenv.sh phpunit --filter test_monitor_creation
 dev/testenv.sh behat --name "Configure the plugin settings"
 dev/testenv.sh exec php admin/cli/purge_caches.php
+dev/testenv.sh pull            # clone the codebases and pre-pull the images only
 dev/testenv.sh stop            # keep containers/data, free resources
 dev/testenv.sh down            # destroy containers and data
 ```

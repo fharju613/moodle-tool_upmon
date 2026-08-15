@@ -12,6 +12,7 @@
 #
 # Usage:
 #   dev/testenv.sh checkout       # only clone moodle + moodle-docker and write the docker config
+#   dev/testenv.sh pull           # checkout and pre-pull the container images
 #   dev/testenv.sh setup          # checkout, start containers, init phpunit & behat
 #   dev/testenv.sh phpunit [args] # run the plugin PHPUnit tests
 #   dev/testenv.sh behat [args]   # run the plugin Behat features
@@ -109,6 +110,11 @@ services:
 YAML
 }
 
+pull() {
+    checkout
+    compose pull -q
+}
+
 setup() {
     checkout
     compose up -d
@@ -173,6 +179,7 @@ command="${1:-}"
 
 case "$command" in
     checkout) run_for_each checkout ;;
+    pull)     run_for_each pull ;;
     setup)    run_for_each setup ;;
     phpunit)  run_for_each phpunit "$@" ;;
     behat)    run_for_each behat "$@" ;;
