@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 $plugin->version   = 2025122700;
 $plugin->release   = 2025122700;
 $plugin->requires  = 2024100700; // Moodle 4.5 and above
-$plugin->supported = [405, 501];  // Moodle 4.5, 5.0, 5.1
+$plugin->supported = [405, 502];  // Moodle 4.5, 5.0, 5.1, 5.2
 $plugin->component = 'tool_upmon';
 $plugin->maturity  = MATURITY_STABLE;
