@@ -7,7 +7,8 @@
 # admin/tool/upmon, so local edits are picked up without re-copying anything.
 #
 # Usage:
-#   dev/testenv.sh setup          # clone moodle + moodle-docker, start containers, init phpunit & behat
+#   dev/testenv.sh checkout       # only clone moodle + moodle-docker and write the docker config
+#   dev/testenv.sh setup          # checkout, start containers, init phpunit & behat
 #   dev/testenv.sh phpunit [args] # run the plugin PHPUnit tests
 #   dev/testenv.sh behat [args]   # run the plugin Behat features
 #   dev/testenv.sh test           # run both
@@ -96,6 +97,7 @@ command="${1:-}"
 [ $# -gt 0 ] && shift || true
 
 case "$command" in
+    checkout) checkout ;;
     setup)   setup ;;
     phpunit) phpunit "$@" ;;
     behat)   behat "$@" ;;
@@ -104,5 +106,5 @@ case "$command" in
     stop)    compose stop ;;
     down)    compose down ;;
     exec)    web "$@" ;;
-    *)       sed -n '3,26p' "${BASH_SOURCE[0]}"; exit 1 ;;
+    *)       sed -n '3,27p' "${BASH_SOURCE[0]}"; exit 1 ;;
 esac
