@@ -2,7 +2,7 @@
 
 The plugin tests run against real Moodle sites provided by
 [moodle-docker](https://github.com/moodlehq/moodle-docker), one per supported
-Moodle version (4.5, 5.0, 5.1 and 5.2). `dev/testenv.sh` wires everything
+Moodle version (4.5, 5.0, 5.1, 5.2 and 5.3). `dev/testenv.sh` wires everything
 together: it checks out each Moodle version and moodle-docker next to this
 repository (in `../.upmon-testenv/<version>` by default), bind mounts this
 working tree into the containers, installs the sites and initialises both the
@@ -38,6 +38,7 @@ Moodle 405: port 8000, plugin at admin/tool/upmon, project upmon405
 Moodle 500: port 8001, plugin at admin/tool/upmon, project upmon500
 Moodle 501: port 8002, plugin at public/admin/tool/upmon, project upmon501
 Moodle 502: port 8003, plugin at public/admin/tool/upmon, project upmon502
+Moodle 503: port 8004, plugin at public/admin/tool/upmon, project upmon503
 ```
 
 Moodle 5.1 moved the codebase below `public/`, so the plugin is mounted at

@@ -25,7 +25,7 @@
 # UPMON_VERSIONS, e.g. `UPMON_VERSIONS=501 dev/testenv.sh phpunit`.
 #
 # Configuration (environment variables):
-#   UPMON_VERSIONS        versions to act on (default: 405 500 501 502)
+#   UPMON_VERSIONS        versions to act on (default: 405 500 501 502 503)
 #   UPMON_WORKSPACE       where the per version checkouts live (default: ../.upmon-testenv)
 #   UPMON_WEB_PORT_BASE   web port of the first version, incremented per version (default: 8000)
 #   MOODLE_DOCKER_DB      database server (default: pgsql)
@@ -36,12 +36,12 @@ set -euo pipefail
 
 plugindir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)"
 workspace="${UPMON_WORKSPACE:-$(dirname "$plugindir")/.upmon-testenv}"
-versions=(${UPMON_VERSIONS:-405 500 501 502})
+versions=(${UPMON_VERSIONS:-405 500 501 502 503})
 portbase="${UPMON_WEB_PORT_BASE:-8000}"
 
 # All supported versions, in order. The index in this list determines the web
 # port, so ports stay stable when UPMON_VERSIONS selects a subset.
-allversions=(405 500 501 502)
+allversions=(405 500 501 502 503)
 
 export MOODLE_DOCKER_DB="${MOODLE_DOCKER_DB:-pgsql}"
 export MOODLE_DOCKER_PHP_VERSION="${MOODLE_DOCKER_PHP_VERSION:-8.3}"
