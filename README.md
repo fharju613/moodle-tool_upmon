@@ -12,7 +12,7 @@ A Moodle admin tool plugin that integrates with the UptimeRobot monitoring servi
 
 ## Requirements
 
-- Moodle 4.5 or higher
+- Moodle 4.5 or higher (supported versions: 4.5, 5.0, 5.1, 5.2 and 5.3)
 - UptimeRobot API key (free or paid)
 
 ## Installation
